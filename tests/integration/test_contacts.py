@@ -51,7 +51,4 @@ def test_post_contact_with_extra_fields(client):
     response = client.post(f"{BASE_URL}/api/contacts", json=new_contact)
     assert response.status_code != 200
 
-# def test_post_empty_payload(client):
-#     response = client.post(f"{BASE_URL}/api/contacts", json={})
-#     assert response.status_code in [400,401,404,403] 
     
